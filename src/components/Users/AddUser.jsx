@@ -2,7 +2,13 @@ import React from 'react'
 
 const AddUser = () => {
   return (
-    <div>AddUser</div>
+    <form>
+      <label htmlFor="username">username</label>
+      <input type="text" id='username'/>
+      <label htmlFor="age">age</label>
+      <input type="number" id='age' />
+      <button>Add User</button>
+    </form>
   )
 }
 
