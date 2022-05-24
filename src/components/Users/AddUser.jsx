@@ -1,5 +1,5 @@
 import React from 'react'
-
+import style from './AddUser.module'
 const AddUser = () => {
   return (
     <form>
