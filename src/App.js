@@ -19,10 +19,14 @@ function App() {
     });
   };
 
+  const deleteUserHandler = (filteredUsers) => {
+    setUserList(filteredUsers);
+  };
+
   return (
     <div className="App">
       <AddUser onAddUser={addUserHandler} />
-      <UserList users={userList} />
+      <UserList users={userList} onDelete={deleteUserHandler} />
     </div>
   );
 }
